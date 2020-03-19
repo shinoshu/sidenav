@@ -5,12 +5,12 @@
 </mat-toolbar>
 
 <!-- パターン１ -->
+<!-- mat-sidenav-contentタグを消去するとsidenavが表示される -->
 <mat-sidenav-container>
   <app-sidenav></app-sidenav>
-  <!-- mat-sidenav-contentタグを挟むとなぜかapp-sidenavが非表示になる -->
-  <!-- <mat-sidenav-content> -->
-  <mat-calendar></mat-calendar>
-  <!-- </mat-sidenav-content> -->
+  <mat-sidenav-content>
+    <mat-calendar></mat-calendar>
+  </mat-sidenav-content>
 </mat-sidenav-container>
 
 <!-- パターン２ -->
